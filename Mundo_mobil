@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mundo Mobil - Reparación y Venta de Celulares</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img.logo {
+      height: 50px;
+      width: auto;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      flex-grow: 1;
+    }
+    .banner {
+      width: 100%;
+      max-height: 350px;
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      object-fit: cover;
+      height: 350px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .services, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .services, .products {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Mundo Mobil" class="logo" />
+    <div>
+      <h1>Mundo Mobil</h1>
+      <p>Reparación y venta de celulares y accesorios</p>
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1580910051070-d3ec2f5b9f81?auto=format&fit=crop&w=1200&q=80" alt="Reparación de celulares" />
+  </div>
+
+  <section id="about">
+    <h2>Quiénes Somos</h2>
+    <p>
+      En Mundo Mobil contamos con años de experiencia en la reparación y venta de celulares, repuestos y accesorios originales. 
+      Nuestro compromiso es brindar un servicio rápido, confiable y con garantía para que siempre estés conectado.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Servicios Destacados</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603575448367-21c1cc6a9e8e?auto=format&fit=crop&w=400&q=80" alt="Reparación de pantallas" />
+        <h3>Reparación de Pantallas</h3>
+        <p>Cambio de pantalla rota por repuestos originales con garantía.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606813909355-b659e33d35d8?auto=format&fit=crop&w=400&q=80" alt="Reparación de baterías" />
+        <h3>Reparación de Baterías</h3>
+        <p>Reemplazo de baterías con productos certificados para mayor duración.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576502200916-3808e07386a5?auto=format&fit=crop&w=400&q=80" alt="Accesorios" />
+        <h3>Accesorios</h3>
+        <p>Venta de fundas, cargadores, auriculares y más accesorios originales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Productos Principales</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607346230317-c1ff766ac6d8?auto=format&fit=crop&w=400&q=80" alt="Pantallas y repuestos" />
+        <h3>Pantallas y Repuestos</h3>
+        <p>Pantallas, flex, baterías y otros repuestos para múltiples marcas.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1610906656400-d179fe8a84c7?auto=format&fit=crop&w=400&q=80" alt="Accesorios originales" />
+        <h3>Accesorios Originales</h3>
+        <p>Fundas, cargadores, protectores y audífonos certificados.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1616172486757-5889357b58ae?auto=format&fit=crop&w=400&q=80" alt="Herramientas para técnicos" />
+        <h3>Herramientas para Técnicos</h3>
+        <p>Equipos de soldadura, microscopios y herramientas especializadas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p class="contact-info">
+      Teléfono: <a href="tel:+3777743802">3777 74-3802</a><br />
+      WhatsApp: <a href="https://wa.me/3777743802" target="_blank">Enviar mensaje</a><br />
+      Instagram: <a href="https://instagram.com/mundo_mobil" target="_blank">@mundo_mobil</a><br />
+      Dirección: Calle Falsa 123, Ciudad Autónoma de Buenos Aires
+    </p>
+    <form action="mailto:tucorreo@mundo-mobil.com" method="post" enctype="text/plain">
+      <input type="text" name="Nombre" placeholder="Tu nombre" required />
+      <input type="email" name="Email" placeholder="Tu correo electrónico" required />
+      <textarea name="Mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Mundo Mobil. Todos los derechos reservados. | Síguenos en 
+    <a href="https://instagram.com/mundo_mobil" target="_blank">@mundo_mobil</a>, 
+    <a href="#" target="_blank">Facebook</a> y 
+    <a href="https://wa.me/3777743802" target="_blank">WhatsApp</a>
+  </footer>
+</body>
+</html>
